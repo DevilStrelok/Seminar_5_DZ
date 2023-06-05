@@ -9,3 +9,11 @@
 # Input: 2 -> 3 4
 # Output: 4 3
 
+
+n = int(input('Введите кол-во элементов: '))
+list_0 = []
+for _ in range(n):
+    list_0.append(int(input('Введите значение: ')))
+print(list_0)
+while list_0:
+    print(list_0.pop(-1), end = ' ')
